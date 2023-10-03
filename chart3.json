@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Heatmap of Correlation Matrix",
+  "width": 400,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/sz0314/life_expansion/main/correlation_matrix.csv"
+  },
+  "layer": [
+    {
+      "mark": "rect",
+      "encoding": {
+        "x": {"field": "row", "type": "nominal", "axis": {"title": null}},
+        "y": {"field": "col", "type": "nominal", "axis": {"title": null}},
+        "color": {"field": "value", "type": "quantitative", "title": null}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "fontSize": 10,
+        "color": "black"
+      },
+      "encoding": {
+        "x": {"field": "row", "type": "nominal"},
+        "y": {"field": "col", "type": "nominal"},
+        "text": {"field": "value", "type": "quantitative", "format": ".2f"}
+      }
+    }
+  ],
+  "config": {}
+}

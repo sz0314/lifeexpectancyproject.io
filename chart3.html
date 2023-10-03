@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.15.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.22.2"></script>
+</head>
+<body>
+  <div id="vis"/>
+  <script>
+    const spec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Heatmap of Correlation Matrix",
+  "width": 400,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/sz0314/life_expansion/main/correlation_matrix.csv"
+  },
+  "layer": [
+    {
+      "mark": "rect",
+      "encoding": {
+        "x": {"field": "row", "type": "nominal", "axis": {"title": null}},
+        "y": {"field": "col", "type": "nominal", "axis": {"title": null}},
+        "color": {"field": "value", "type": "quantitative", "title": null}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "fontSize": 10,
+        "color": "black"
+      },
+      "encoding": {
+        "x": {"field": "row", "type": "nominal"},
+        "y": {"field": "col", "type": "nominal"},
+        "text": {"field": "value", "type": "quantitative", "format": ".2f"}
+      }
+    }
+  ],
+  "config": {}
+};
+    vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+  </script>
+</body>
+</html>
