@@ -1,0 +1,168 @@
+/* Reset some default styles and provide a basic style foundation */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+}
+
+.page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #444;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #555;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Style for descriptions */
+.description {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.description-left {
+    text-align: left;
+}
+
+.description-right {
+    text-align: right;
+}
+
+/* Style for iframes */
+iframe {
+    width: 100%;
+    max-height: max-content;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.small-font {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Responsive layout for pure grid */
+@media screen and (max-width: 768px) {
+    .pure-u-1-1,
+    .pure-u-1-2,
+    .pure-u-1-3,
+    .pure-u-md-1-2,
+    .pure-u-md-1-3 {
+        width: 100%;
+    }
+
+    .pure-u-1-2 {
+        margin-top: 20px;
+    }
+}
+
+/* CSS for two-column layout */
+.chart2-container {
+  display: flex;
+  flex-direction: row; /* Arrange items horizontally */
+  align-items: flex-start; /* Align items at the top of the columns */
+}
+
+.chart2-container iframe {
+  flex: 1; /* Allow the chart to take up all available space in the first column */
+  margin-right: 20px; /* Add spacing between the chart and description */
+}
+
+
+/* Additional styles for Chart 3 layout */
+.chart-description-container {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr; /* 1.5-column and 0.5-column layout */
+    gap: 20px;
+}
+
+/* Styles for Chart 3 content (chart) */
+.chart-content {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+    .chart-content iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+/* Styles for Chart 3 description */
+.chart-description {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+    .chart-description h3 {
+        font-size: 18px;
+        margin-top: 0;
+        color: #333;
+    }
+
+    .chart-description p {
+        font-size: 14px;
+        color: #555;
+    }
+/* CSS for Chart 4 */
+.chart4-container {
+    text-align: center;
+    margin: 0 auto; /* Center the container horizontally */
+    max-width: 100%; /* Set max-width to ensure responsiveness */
+}
+
+    .chart4-container .chart-content {
+        border: 1px solid #ccc; /* Add a border to the chart container */
+        padding: 20px; /* Add padding for spacing within the container */
+    }
+
+    .chart4-container h2 {
+        font-size: 24px; /* Increase the font size for the chart title */
+        margin-bottom: 10px; /* Add some spacing below the title */
+    }
+
+    .chart4-container p {
+        font-size: 16px; /* Set font size for the description */
+        margin-bottom: 20px; /* Add spacing below paragraphs */
+    }
+
+    .chart4-container iframe {
+        width: 100%; /* Ensure the iframe spans the entire container width */
+        height: 500px; /* Set a fixed height for the iframe */
+    }

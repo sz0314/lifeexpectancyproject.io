@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Life expectancy & Socio-Economic (world bank)</title>
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Center align the title -->
+  <style>
+    h1 {
+      text-align: center;
+    }
+  </style>
+
+  <!-- Center align the subtitle and set the color to blue -->
+  <style>
+    .subtitle {
+      text-align: center;
+      color: blue;
+    }
+  </style>
+
+  <!-- Center align the chart and set a max-width -->
+  <style>
+    .chart-container {
+      text-align: center;
+      margin: 0 auto; /* Center horizontally */
+      max-width: 1000px; /* Set max-width to control chart size */
+    }
+  </style>
+
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+  <div class="page">
+    <h1>Life expectancy & Socio-Economic (world bank)</h1>
+    <p></p>
+    <p class="subtitle">Global Life Expectancy with Socio-Economic variables 2000-2019</p>
+    <p></p>
+    <p></p>
+    <h2>Background</h2>
+    <p></p>
+    <p></p>
+    <p><b>Life expectancy</b> at birth indicates the number of years a newborn infant would live if prevailing
+        patterns of mortality at the time of its birth were to stay the same throughout its life. It is a key
+        metric for assessing population health. Life expectancy has burgeoned since the advent of industrialization
+        in the early 1900s and the world average has now more than doubled to 70 years. Yet, we still see inequality
+        in life expectancy across and within countries.</p>
+    <p></p>
+    <p></p>
+    <p>In the figures below, we have shown <b>how life expectancy varies between high-income and low-income
+            countries</b>. However, further analysis is necessary to determine how the allocation of a country’s
+        wealth through certain investments in healthcare, education, environmental management, and some socioeconomic
+        factors have an overall effect in determining average life expectancy.</p>
+    <p></p>
+    <p></p>
+    <h2>Key Questions</h2>
+    <p></p>
+    <p></p>
+    <p>Although there is a rich literature on life expectancy, especially in relation to economic development.
+        Surprisingly, however, despite the fact that malnutrition and prevalence of infectious diseases may still be
+        factors determining life expectancy, there is a lack of detailed research. Therefore, we attempted to address
+        this shortcoming through research. In this article, we aim to better understand the factors that influence life
+        expectancy in order to develop effective policy-making processes and better allocate funds and resources.</p>
+    <p></p>
+    <p></p>
+    <p>To achieve this goal, we attempted to answer the following questions in this study:</p>
+    <p><b>How do epidemics of malnutrition and infectious diseases affect life expectancy?</b></p>
+
+    <div class="pure-g">
+
+      <!-- Chart 1: Life Expectancy Worldwide -->
+      <div class="pure-u-1 chart-container">
+        <h2>Chart 1: Life Expectancy Worldwide</h2>
+        <p>As can be seen from Chart 1, the distribution of life expectancy around the world is extremely uneven. Life
+          expectancy at birth is generally higher in Europe than in other regions, while life expectancy at birth is
+          lowest in sub-Saharan Africa. Sub-Saharan African countries consistently rank among the lowest-income
+          countries in terms of GDP per capita. Therefore, there is considerable room for improvement in life
+          expectancy in sub-Saharan countries. The world's two superpowers, the United States and China, are not above
+          many European countries.</p>
+        <iframe src="https://sz0314.github.io/lifexxpectancyworldbank.io/" width="1000" height="550"></iframe>
+      </div>
+
+<!-- Chart 2: Ranking of Life Expectancy -->
+<div class="pure-u-1 chart-container">
+  <h2>Chart 2: Ranking of Life Expectancy</h2>
+  <!-- Description of how worldwide life expectancy is ranked. -->
+  <div class="chart-description-container" style="display: flex;">
+    <iframe src="https://sz0314.github.io/rankinglife.io/" width="300" height="900" style="flex: 1;"></iframe>
+    <div class="chart-description" style="flex: 1;">
+      <h3>Description</h3>
+      <p>Life expectancy can vary significantly from one country to another and is influenced by various factors, including healthcare, economic development, lifestyle, and more. As of my last knowledge update in September 2021, here's a ranking of countries with the highest life expectancy.</p>
+
+<p>For instance, <b>Japan</b> has consistently ranked as one of the countries with the highest life expectancy. The Japanese population enjoys excellent healthcare, a healthy diet, and a strong emphasis on public health.</p>
+    <p>   </p>
+    <p>   </p>
+<p><b>Switzerland</b> has a high standard of living and a well-developed healthcare system, contributing to its high life expectancy.</p>
+    <p>   </p>
+    <p>                                                                                                                                                                                                                                                                                                     </p>......................................................................
+
+<p> Update in September 2021, the worldwide average life expectancy was approximately 73 years.</p>
+
+<p>In the context of life expectancy, a <b>right-skewed distribution (left bottom)</b> means that when you look at the entire population of a region or country, most people have relatively shorter lifespans, but there is a smaller group of individuals who have significantly longer lifespans. This smaller group of people with longer lifespans pulls the average (or mean) life expectancy to the right, creating a rightward skewness in the distribution.</p>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Chart 3: Correlation between Economic Development and Life Expectancy -->
+<div class="pure-u-1 chart-container chart-3">
+  <h2>Chart 3: Correlation between Economic Development and Life Expectancy</h2>
+  <!-- Description of how economic development affects life expectancy. -->
+  <div class="chart-description-container">
+    <iframe src="https://sz0314.github.io/correlationmartrix.io/" width="500" height="600"></iframe>
+    <div class="chart-description">
+      <h3>Description</h3>
+      <p>Based on Chart 3, <b>life expectancy</b> is strongly positively correlated with <b>sanitation levels</b> and strongly negatively correlated with <b>undernourishment</b>. This observation aligns with what we know about the impact of sanitation and nutrition on life expectancy. </p>
+
+<p>A strong positive correlation indicates that as sanitation levels improve, life expectancy tends to increase.</p>
+
+<p>A strong negative correlation implies that as undernourishment decreases (i.e., people have better access to sufficient and nutritious food), life expectancy tends to rise.</p>
+
+    </div>
+  </div>
+</div>
+
+<!-- Chart 4: Sanitation and Life Expectancy -->
+<div class="pure-u-1 chart-container" style="text-align: center;">
+  <h2>Chart 4: Sanitation and Life Expectancy</h2>
+  <div class="chart-content">
+    <p>Access to clean and safe sanitation facilities has a significant impact on the overall health and life expectancy of populations. In many regions with inadequate sanitation, life expectancy remains lower due to the increased risk of diseases.</p>
+
+ <p>However, with the improvement of sanitation Levels, life expectancy <b>does not increase linearly</b>. This implies that there are other factors constraining life expectancy. Similarly, as the prevalence of undernourishment increases, the decrease in life expectancy is also <b>non-linear</b>. Some countries exhibit steeper declines, indicating a <b>high vulnerability</b>.</p>
+
+  </div>
+  <iframe src="https://sz0314.github.io/sanitation_life_expectancy.io/" width="100%" height="400"></iframe>
+</div>
+
+    </div>
+    <p></p>
+    <p></p>
+    <h2>Conclusion and Future Directions</h2>
+    <p></p>
+    <p></p>
+    <p>In conclusion, life expectancy is a multifaceted issue influenced by numerous factors. While sanitation and nutrition are crucial determinants, understanding and explaining changes in life expectancy require considering a broader context, including social, economic, and environmental factors. Policymakers and interventions should take these complexities into account to improve overall health and life expectancy levels.</p>
+    <p>............................................................................................................................................................................................................................................................................</p>
+    <p>.............................................................................................................................................................................................................................................................................</p>
+
+    <div class="pure-g">
+      <div class="pure-u-1 small-font">
+        <p>This visualization is created by <a href="https://fit3179.github.io/Vega-Lite/" target="_blank">sz0314</a>. The data source is <a href="#" target="_blank">https://www.kaggle.com/datasets/mjshri23/life-expectancy-and-socio-economic-world-bank</a>.</p>
+      </div>
+    </div>
+
+  </div> <!-- end page -->
+
+</body>
+
+</html>
