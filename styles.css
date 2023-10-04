@@ -104,7 +104,7 @@ iframe {
 .chart-description-container {
     display: grid;
     grid-template-columns: 1.3fr 0.7fr; /* 1.5-column and 0.5-column layout */
-    gap: 20px;
+    gap: 10px;
 }
 
 /* Styles for Chart 3 content (chart) */
@@ -137,7 +137,7 @@ iframe {
     }
 
     .chart-description p {
-        font-size: 16px;
+        font-size: 14px;
         color: #555;
     }
 /* CSS for Chart 4 */
@@ -153,12 +153,12 @@ iframe {
     }
 
     .chart4-container h2 {
-        font-size: 20px; /* Increase the font size for the chart title */
+        font-size: 24px; /* Increase the font size for the chart title */
         margin-bottom: 10px; /* Add some spacing below the title */
     }
 
     .chart4-container p {
-        font-size: 16px; /* Set font size for the description */
+        font-size: 14px; /* Set font size for the description */
         margin-bottom: 20px; /* Add spacing below paragraphs */
     }
 
@@ -166,7 +166,7 @@ iframe {
         width: 100%; /* Ensure the iframe spans the entire container width */
         height: 500px; /* Set a fixed height for the iframe */
     }
-<style >
+
 .chart-container {
     text-align: center; /* Center the content horizontally within the container */
     margin: 0 auto; /* Center the container horizontally within its parent */
@@ -176,5 +176,3 @@ iframe {
 .chart-container p {
     text-align: left; /* Center the text within the paragraphs */
 }
-
-</style >
